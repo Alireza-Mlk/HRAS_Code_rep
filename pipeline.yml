@@ -9,12 +9,13 @@
 database:
    name: "csvdb"
 
-
+# GTF file directory #
 gtf_dir: "/fastdata/bof20am/l4project/rmats_tcga/TCGA-agg-agg.filtered.gtf"
 
+# Set resources
 rmats:
   threads: 2
   mem: 16G
-
+# Regex for .bam input files
 data:
   rx: /(?P<s_name>.+)-T(?P<s_time>.+)-(?P<s_rep>.+)\.star\.bam
